@@ -9,14 +9,14 @@ match priority:
         if time_bound == "yes":
             print("Reminder:", reminder, "is a", priority, "priority task that requires immediate attention today!") 
         else:
-            print("Note:", reminder, "is a", priority, "priority task that is not urgent. Consider completing it during your break time!")
+            print("Reminder:", reminder, "is a", priority, "priority task that is not urgent. Consider completing it during your break time!")
     case "medium":
         if time_bound == "yes":
             print("Reminder:", reminder, "is a", priority, "priority task that requires your attention before the end of the day!") 
         else:
-            print("Note:", reminder, "is a", priority, "priority task that is not urgent. Consider completing it sooner than later!")
+            print("Reminder", reminder, "is a", priority, "priority task that is not urgent. Consider completing it sooner than later!")
     case "low":
         if time_bound == "yes":
             print("Reminder:", reminder, "is a", priority, "priority task that requires your attention") 
         else:
-            print("Note:", reminder, "is a", priority, "priority task that is not urgent. Consider completing it during your free time!")
+            print("Reminder", reminder, "is a", priority, "priority task that is not urgent. Consider completing it during your free time!")
