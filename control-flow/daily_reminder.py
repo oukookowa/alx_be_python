@@ -3,19 +3,20 @@ task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
+reminder = task
 match priority:
     case "high":
         if time_bound == "yes":
-            print("Reminder:", "'" + task + "'", "is a", priority, "priority task that requires immediate attention today!") 
+            print("Reminder:", "'" + reminder + "'", "is a", priority, "priority task that requires immediate attention today!") 
         else:
-            print("Note:", "'" + task + "'", "is a", priority, "priority task that is not urgent. Consider completing it during your break time!")
+            print("Note:", "'" + reminder + "'", "is a", priority, "priority task that is not urgent. Consider completing it during your break time!")
     case "medium":
         if time_bound == "yes":
-            print("Reminder:", "'" + task + "'", "is a", priority, "priority task that requires your attention before the end of the day!") 
+            print("Reminder:", "'" + reminder + "'", "is a", priority, "priority task that requires your attention before the end of the day!") 
         else:
-            print("Note:", "'" + task + "'", "is a", priority, "priority task that is not urgent. Consider completing it sooner than later!")
+            print("Note:", "'" + reminder + "'", "is a", priority, "priority task that is not urgent. Consider completing it sooner than later!")
     case "low":
         if time_bound == "yes":
-            print("Reminder:", "'" + task + "'", "is a", priority "priority task that requires your attention") 
+            print("Reminder:", "'" + reminder + "'", "is a", priority "priority task that requires your attention") 
         else:
-            print("Note:", "'" + task + "'", "is a", priority, "priority task that is not urgent. Consider completing it during your free time!")
+            print("Note:", "'" + reminder + "'", "is a", priority, "priority task that is not urgent. Consider completing it during your free time!")
