@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-#Contains a function that performs basic arithmetic operations
+#!/bin/bash
+#Contains a function that performs basic arithmetic operations given 2 numbers and desired operation
 def perform_operation(num1, num2, operation):
     if operation == 'add':
         result = round(float(num1 + num2), 2)
