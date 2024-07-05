@@ -15,12 +15,12 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            new_item = input("Enter the item name: ")
+            new_item = input("Enter the item to add: ")
             shopping_list.append(new_item)
             pass
         elif choice == '2':
             # Prompt for and remove an item
-            item = input("Enter the item name to remove: ")
+            item = input("Enter the item to remove: ")
             if item not in shopping_list:           
                 print("Item not found in shopping list!")
             else:
