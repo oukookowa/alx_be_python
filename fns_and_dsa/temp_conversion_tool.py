@@ -18,7 +18,7 @@ def operation():
     try:
         temperature = float(input("Enter the temperature to convert: "))
     except ValueError:
-        print("Invalid temperature. Please enter a numeric value!")
+        print("Invalid temperature. Please enter a numeric value.")
         return None
     temperature_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
     if temperature_unit not in ["C", "F"]:
