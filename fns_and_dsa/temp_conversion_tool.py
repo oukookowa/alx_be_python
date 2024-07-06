@@ -5,12 +5,12 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 #Function converts temperature from fahrenheit to celsius
 def convert_to_celsius(fahrenheit):
     global FAHRENHEIT_TO_CELSIUS_FACTOR
-    temprature_celcius = round(FAHRENHEIT_TO_CELSIUS_FACTOR * (fahrenheit - 32), 2)
+    temprature_celcius = round((fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR, 2)
     print(f"{fahrenheit}°F is {temprature_celcius}°C")
 #Function converts temperature from celsius to fahrenheit 
 def convert_to_fahrenheit(celsius):
     global CELSIUS_TO_FAHRENHEIT_FACTOR
-    temperature_fahrenheit = round(CELSIUS_TO_FAHRENHEIT_FACTOR * celsius + 32, 2)
+    temperature_fahrenheit = round(celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32, 2)
     print(f"{celsius}°C is {temperature_fahrenheit}°F")
 #Validation of user input for valid values and strings
 
