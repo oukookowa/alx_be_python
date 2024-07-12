@@ -5,12 +5,12 @@ class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
         self.calc = SimpleCalculator()
     
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(2, 4), 6) #for positive integers
         self.assertEqual(self.calc.add(-2,-2), -4) #for negative integers
         self.assertEqual(self.calc.add(-2, 3), 1) #for negative & positve integers
         
-    def test_substract(self):
+    def test_substraction(self):
         self.assertEqual(self.calc.subtract(4, 2), 2) #for positive integers
         self.assertEqual(self.calc.subtract(-2,-2), 0) #for negative integers
         self.assertEqual(self.calc.subtract(-3, 2), -5) #for negative & positve
