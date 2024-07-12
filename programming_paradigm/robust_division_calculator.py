@@ -15,11 +15,11 @@ def safe_divide(numerator, denominator):
             print(f"The result of the division is {result}")
     #handle ZeroDivisionError when dividing by zero
     except ZeroDivisionError:
-        print("Error: Cannot divide by zero.")
+        return "Error: Cannot divide by zero."
     #handles the exception in case invalid input is entered
     except UnboundLocalError:
-        print("You entered the wrong value(s), cannot proceed operation!")
+        return "You entered the wrong value(s), cannot proceed operation!"
     except TypeError:
-        print("Unsupported operand type(s) for division")   
-    finally:
-        return "Division operation complete..."
+        return "Unsupported operand type(s) for division"   
+   #finally:
+        #return "Division operation complete..."
