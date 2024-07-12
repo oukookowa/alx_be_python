@@ -10,7 +10,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(-2,-2), -4) #for negative integers
         self.assertEqual(self.calc.add(-2, 3), 1) #for negative & positve integers
         
-    def test_substraction(self):
+    def test_subtraction(self):
         self.assertEqual(self.calc.subtract(4, 2), 2) #for positive integers
         self.assertEqual(self.calc.subtract(-2,-2), 0) #for negative integers
         self.assertEqual(self.calc.subtract(-3, 2), -5) #for negative & positve
