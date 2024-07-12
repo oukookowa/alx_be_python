@@ -19,7 +19,7 @@ def safe_divide(numerator, denominator):
     #handles the exception in case invalid input is entered
     except UnboundLocalError:
         return "You entered the wrong value(s), cannot proceed operation!"
-    except TypeError:
-        return "Unsupported operand type(s) for division"   
+    #except TypeError:
+        #return "Unsupported operand type(s) for division"   
    #finally:
         #return "Division operation complete..."
