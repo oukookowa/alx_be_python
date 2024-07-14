@@ -3,22 +3,18 @@ class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
-        self._is_checked_out = False
+        self._is_checked_out = []
 
     def check_out(self):
-        if not self._is_checked_out:
-            self._is_checked_out = True
-            return True
-        return False
+        if self not in self._is_checked_out:
+            self._is_checked_out.append(self)
 
     def return_book(self):
-        if self._is_checked_out:
-            self._is_checked_out = False
-            return True
-        return False
+        if self in self._is_checked_out:
+            self._is_checked_out.remove(self)
 
     def is_available(self):
-        return not self._is_checked_out
+        return self not in self._is_checked_out
 
 #Define Library class to store instances of book as defined in the Book class
 class Library:
